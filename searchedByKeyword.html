@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Searched by Keyword</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="libraries/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body onload="lockStatus()">
+    <!-- Our Code Starts Here -->
+    <div class="container content-box my-xs-0 my-sm-5 pt-3"> <!-- Start outer container -->
+      <div class="row"> <!-- Top bar -->
+        <div class="col-1">
+          <a href="searchByKeyword.html"><i class="fas fa-chevron-left fa-2x"></i></a> <!-- Back button -->
+        </div>
+        <div class="col ml-3 mt-2"><h4>recruiting</h4></div> <!-- Page title -->
+      </div>
+
+      <div class="post"> <!-- Start post -->
+        <div class="row">
+          <div class="col"> <!-- Post title -->
+            <h4>
+              <a href="#" class="post-title">Joining Forces: How Clubs can Work Together</a>
+              <div class="post-lock-div" data-toggle="popover" data-placement="bottom" data-content="Contribute a post to view content.">
+                <i class="fas fa-lock post-lock pt-3"></i>
+              </div>
+            </h4>
+          </div>
+        </div>
+        <div class="row"> <!-- Post content -->
+          <div class="col post-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare ex ac enim convallis ullamcorper eu eu purus. Ut vestibulum ullamcorper eros, vestibulum luctus urna commodo in. Sed aliquam mauris in est fermentum, quis condimentum lacus euismod. Donec euismod id ante ut tempor. Vestibulum luctus orci id consequat fringilla. Integer quis massa euismod, rutrum nisl sit amet, blandit lectus. Aenean lorem eros, bibendum sit amet fermentum ac, molestie consectetur justo. Nullam ultricies nibh a vulputate ornare. Vestibulum eget bibendum neque. Pellentesque semper aliquet dolor, bibendum semper justo consectetur quis.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 mt-2"> <!-- Post tags -->
+            <h5>
+              <span class="badge badge-pill badge-dark">collaboration</span>
+            </h5>
+          </div>
+          <!-- <div class="col-2"><img src="images/applause_icon.png" alt="Applause icon" width="40"></div> -->
+          <div class="col-6 icon-col mt-4">
+            <!-- <img  class="icon mt-2" src="images/applause_icon.png" alt="Applause icon" width="40"> -->
+            <i class="far fa-thumbs-up icon"></i><span class="mr-2 ml-1">0</span>
+            <i class="far fa-star icon"></i>
+          </div>
+        </div>
+        <hr>
+      </div>
+
+      <div class="post"> <!-- Start post -->
+        <div class="row">
+          <div class="col"> <!-- Post title -->
+            <h4>
+              <a href="#" class="post-title">5 Things Every President Should Know</a>
+              <div class="post-lock-div" data-toggle="popover" data-placement="bottom" data-content="Contribute a post to view content.">
+                <i class="fas fa-lock post-lock pt-3"></i>
+              </div>
+            </h4>
+          </div>
+        </div>
+        <div class="row"> <!-- Post content -->
+          <div class="col post-content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare ex ac enim convallis ullamcorper eu eu purus. Ut vestibulum ullamcorper eros, vestibulum luctus urna commodo in. Sed aliquam mauris in est fermentum, quis condimentum lacus euismod. Donec euismod id ante ut tempor. Vestibulum luctus orci id consequat fringilla. Integer quis massa euismod, rutrum nisl sit amet, blandit lectus. Aenean lorem eros, bibendum sit amet fermentum ac, molestie consectetur justo. Nullam ultricies nibh a vulputate ornare. Vestibulum eget bibendum neque. Pellentesque semper aliquet dolor, bibendum semper justo consectetur quis.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 mt-2"> <!-- Post tags -->
+            <h5>
+              <span class="badge badge-pill badge-dark">fundraising</span>
+            </h5>
+          </div>
+          <!-- <div class="col-2"><img src="images/applause_icon.png" alt="Applause icon" width="40"></div> -->
+          <div class="col-6 icon-col mt-4">
+            <!-- <img  class="icon mt-2" src="images/applause_icon.png" alt="Applause icon" width="40"> -->
+            <i class="far fa-thumbs-up icon"></i><span class="mr-2 ml-1">0</span>
+            <i class="far fa-star icon"></i>
+          </div>
+        </div>
+        <hr>
+      </div>
+
+    </div>
+    <!-- Our Code Ends Here -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then custom JS in the "bucket" -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="libraries/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/bucket.js"></script>
+    <script>
+      function lockStatus() {
+        var lock_status = sessionStorage.getItem("locked");
+        if(lock_status == "yes") {
+          $(".post-lock-div").css("display", "block");
+        } else {
+          $(".post-lock-div").css("display", "none");
+        }
+      }
+    </script>
+  </body>
+</html>

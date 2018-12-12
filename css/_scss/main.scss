@@ -1,0 +1,154 @@
+@import '_colors.scss';
+@import '_fonts.scss';
+@import '_urls.scss';
+@import '_mixins.scss';
+
+// Your Google font here
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Lato');
+
+// Your CSS/SCSS below this line
+
+html, body {
+    height: 100%;
+}
+
+.container {
+	min-height: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: $font_0, $font_1, $font_2;
+  font-size: 18px;
+	color: #696969;
+}
+
+@for $i from 1 through 6 { // Loop that sets the font face for all headings
+  h#{7 - $i} {
+    font-family: $font_3, $font_4, $font_5;
+  }
+}
+
+.post-content {
+  height: 75px;
+  overflow: hidden;
+}
+
+.post-lock-div {
+	position: absolute;
+	bottom: 8px;
+  height: 100%;
+	width: 90%;
+	z-index: 1;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.post-lock {
+  opacity: 0.75;
+	color: $light_purple;
+}
+
+.fa-plus-circle {
+  text-shadow: 2px 2px grey;
+	font-size: 3.5em;
+}
+
+.navbar-default {
+	background-color: $light_purple;
+}
+
+.nav-filter-icons {
+	color: $dark_purple;
+	font-size: 1.5em;
+}
+
+.post-title {
+	color: $dark_purple;
+}
+
+.fa-plus-circle {
+	color: $orange;
+}
+
+.fa-star {
+	color: $dark_purple;
+}
+
+.badge-pill {
+	background-color: #696969;
+	letter-spacing: 1.5px;
+}
+
+.blue-btn {
+	background-color: $blue;
+	border-color: $blue;
+}
+
+.icon-col {
+	text-align: right;
+}
+
+.icon {
+	font-size: 1.5em;
+}
+
+.page-background {
+	background-color: $light_purple;
+}
+
+.new-post-icon {
+	border-color: $light_purple;
+	color: $dark_purple;
+}
+
+.fa-chevron-left {
+	color: $dark_purple;
+}
+
+.add-labels-icon {
+	color: $dark_purple;
+}
+
+.help-info-item {
+  color: $dark_purple;
+}
+
+.keyboard {
+  width: 100%;
+  height: 252.66px;
+}
+
+.popover {
+	background-color: $orange;
+}
+
+#search-by-keyword-icon {
+	font-size: 1.2em;
+	color: $dark_purple;
+}
+
+#title-first-word {
+  color: $orange;
+}
+
+#title-second-word {
+  color: $light_purple;
+}
+
+
+
+
+
+// .icon {
+// 	vertical-align: middle;
+// }
+
+// body {
+//   background-color: #2c1e38;
+// }
+
+// #navbar {
+//   background-color: #557e93;
+// }

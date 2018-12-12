@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="libraries/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- Our Code Starts Here -->
+    <div class="container content-box my-xs-0 my-sm-5 pt-3"> <!-- Start outer container -->
+      <div class="row mt-5">
+        <div class="col"><h1><span id="title-first-word">insight</span><span id="title-second-word">X</span></h1></div>
+      </div>
+      <div class="row">
+        <p class="ml-3 mr-3">Share knowledge, share experience. Helping leadership teams run successful clubs and organizations at Jefferson University.</p>
+      </div>
+      <form>
+        <div class="form-group">
+          <small id="emailHelp" class="form-text text-muted">Enter your Jefferson Univeristy username (<b>username</b>@mail.philau.edu)</small>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="username">
+        </div>
+        <div class="form-group">
+          <small id="emailHelp" class="form-text text-muted">Enter your Jefferson Univeristy password</small>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password">
+        </div>
+        <div class="form-group text-center">
+          <a href="index.html" class="btn btn-primary blue-btn" role="button">Login</a>
+        </div>
+      </form>
+    </div>
+    <!-- Our Code Ends Here -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then custom JS in the "bucket" -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="libraries/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/bucket.js"></script>
+    <script>
+      sessionStorage.setItem("locked", "yes");
+    </script>
+  </body>
+</html>
